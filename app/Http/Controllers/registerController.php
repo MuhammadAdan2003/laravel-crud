@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserData;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +11,7 @@ class registerController extends Controller
 {
     public function postData(Request $data)
     {
-        UserData::create($data->all());
+        User::create($data->all());
         return redirect('/register')->with('success', 'Account created successfully');
     }
 

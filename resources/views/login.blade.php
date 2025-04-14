@@ -69,12 +69,12 @@
                 @csrf
                 <div class="mb-3">
                     <label for="loginEmail" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="loginEmail" name="Name">
+                    <input type="text" class="form-control" id="loginEmail" name="name">
                 </div>
 
                 <div class="mb-3">
                     <label for="loginPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="loginPassword" name="Password">
+                    <input type="password" class="form-control" id="loginPassword" name="password">
                     <div class="text-end mt-2">
                         <a href="#" class="text-decoration-none">Forgot password?</a>
                     </div>

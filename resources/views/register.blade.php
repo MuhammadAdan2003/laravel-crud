@@ -53,18 +53,18 @@
                 <div class="row mb-3">
                     <div class="col-md-12 mb-3 mb-md-0">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" name="Name" required>
+                        <input type="text" class="form-control" id="firstName" name="name" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required name="Email">
+                    <input type="email" class="form-control" id="email" required name="email">
                     <div class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" required name="Password">
+                        <input type="password" class="form-control" id="password" required name="password">
                         <div class="form-text">Minimum 8 characters</div>
                     </div>
                     <div class="col-md-6">
