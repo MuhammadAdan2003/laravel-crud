@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 // use App\Http\Controllers\information;
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\registerController;
 use App\Models\Information;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,12 @@ Route::delete('/delete/{id}', [InformationController::class, 'deleteData'])->nam
 
 Route::get('/showEdit/{id}', [InformationController::class, 'editData'])->name('editEdit');
 Route::post('/update', [InformationController::class, 'updateData'])->name('update');
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::post('/postData', [registerController::class, 'postData'])->name('post');
 
 // Route::get('/edit', function () {
 //     return view('edit');

@@ -17,9 +17,6 @@ class InformationController extends Controller
             'phone' => 'required'
         ]);
         Information::create($request->all());
-
-
-
         return redirect('/')->with('success', 'Data saved successfully!');
         // $data = Information::all();
         // dd($data);
