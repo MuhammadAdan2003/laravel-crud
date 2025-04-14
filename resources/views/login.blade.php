@@ -14,8 +14,8 @@
         }
 
         .login-container {
-            max-width: 500px;
-            margin: 100px auto;
+            max-width: 400px;
+            margin: 50px auto;
             padding: 30px;
             background-color: white;
             border-radius: 10px;
@@ -61,20 +61,26 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="login-container">
             <h2 class="login-title">Welcome Back</h2>
-
             <form method="POST" action="{{ route('loginMe') }}">
                 @csrf
                 <div class="mb-3">
                     <label for="loginEmail" class="form-label">Email</label>
                     <input type="email" class="form-control" id="loginEmail" name="email">
+                    @error('email')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <div class="mb-3">
                     <label for="loginPassword" class="form-label">Password</label>
                     <input type="password" class="form-control" id="loginPassword" name="password">
+                    @error('email')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
                     <div class="text-end mt-2">
                         <a href="#" class="text-decoration-none">Forgot password?</a>
                     </div>

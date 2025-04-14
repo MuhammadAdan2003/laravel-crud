@@ -13,8 +13,8 @@
         }
 
         .registration-container {
-            max-width: 600px;
-            margin: 50px auto;
+            max-width: 400px;
+            margin: 30px auto;
             padding: 30px;
             background-color: white;
             border-radius: 10px;
@@ -23,7 +23,7 @@
 
         .registration-title {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             color: #0d6efd;
         }
 
