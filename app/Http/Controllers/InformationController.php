@@ -7,8 +7,6 @@ use App\Models\Information;
 
 class InformationController extends Controller
 {
-
-
     public function saveData(Request $request)
     {
         $request->validate([

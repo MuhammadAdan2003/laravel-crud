@@ -17,7 +17,6 @@ class registerController extends Controller
 
     public function loginMe(Request $data): RedirectResponse
     {
-
         $credentials = $data->validate([
             'email' => ['required', 'email'],
             'password' => ['required']
