@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Controller;
-// use App\Http\Controllers\information;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\registerController;
 use App\Models\Information;
@@ -13,31 +12,23 @@ Route::get('/', function () {
 })->name('home');
 
 Route::post('/saveData', [InformationController::class, 'saveData'])->name('save');
-// Route::get('/records', function () {
-//     return  view('data');
-// });
+
 
 Route::get('/records', [InformationController::class, 'showData'])->name('show');
 
 Route::delete('/delete/{id}', [InformationController::class, 'deleteData'])->name('delete');
-
-
-// Route::get('/edit/{id}', [InformationController::class, 'editData'])->name('edit');
 
 Route::get('/showEdit/{id}', [InformationController::class, 'editData'])->name('editEdit');
 Route::post('/update', [InformationController::class, 'updateData'])->name('update');
 
 Route::get('/register', function () {
     return view('register');
-});
+})->name('register');
 
 Route::post('/postData', [registerController::class, 'postData'])->name('post');
 
-// Route::get('/edit', function () {
-//     return view('edit');
-// });
-// Route::get('/show', [InformationController::class, 'showPage'])->name('show');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
-// Route::get('page', function () {
-//     return view('page');
-// });
+Route::post('/loginData2', [registerController::class, 'loginMe'])->name('loginMe');

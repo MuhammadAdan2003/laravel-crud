@@ -18,9 +18,6 @@ class InformationController extends Controller
         ]);
         Information::create($request->all());
         return redirect('/')->with('success', 'Data saved successfully!');
-        // $data = Information::all();
-        // dd($data);
-        // exit();
     }
 
     public function showData(Request $request)
@@ -39,20 +36,13 @@ class InformationController extends Controller
     public function editData($id)
     {
         $editData = Information::find($id);
-        // echo $editData;
         return view('edit', compact('editData'));
-        // return redirect('edit');
     }
 
     public function updateData(Request $request)
     {
         $updation = Information::find($request['id']);
         $updation->update($request->all());
-
-        // return redirect()->route('editEdit', $request['id']);
-
         return redirect('/records')->with('update', 'Record has been updated');
-        // echo $updation;
-
     }
 }

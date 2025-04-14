@@ -35,15 +35,6 @@
         <div class="form-container bg-white">
 
             <h2 class="form-title text-center">Data Form</h2>
-            {{-- @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif --}}
             <div class="d-flex justify-content-end">
 
                 <a class="text-light btn btn-primary text-end" href="{{ route('show') }}">Show
